@@ -6,3 +6,4 @@ star
 three
 eagle
 try
+[test]
