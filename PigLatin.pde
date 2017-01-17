@@ -53,11 +53,8 @@ public void splitString(String s){
 			temp+=tempS.charAt(i);
 		}
 		else{
-			if(temp.length()>0){
-				//checks to see if temp is not empty
-				linesWords.add(temp);
-				linesPunc.add(Character.toString(tempS.charAt(i)));
-			}
+			linesWords.add(temp);
+			linesPunc.add(Character.toString(tempS.charAt(i)));
 			temp="";
 		}
 	}
