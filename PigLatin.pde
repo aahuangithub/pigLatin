@@ -5,7 +5,7 @@ ArrayList<Character> LETTERS = new ArrayList<Character>();
 
 public void setup() {
 	String lettersString = "abcdefghijklmnopqrstuvwxyz";
-	String[] allLines = loadStrings("LowellHymn.txt");
+	String[] allLines = loadStrings("hamlet.txt");
 	for(int i = 0; i<lettersString.length();i++) 
 		LETTERS.add(lettersString.charAt(i));
 	for (String s:allLines){
@@ -49,9 +49,8 @@ public void splitString(String s){
 	String temp="";
 
 	for(int i=0; i<tempS.length();i++){
-		if(isLetter(tempS.charAt(i))||tempS.charAt(i)=='\''){
+		if(isLetter(tempS.charAt(i))||tempS.charAt(i)=='\'')
 			temp+=tempS.charAt(i);
-		}
 		else{
 			linesWords.add(temp);
 			linesPunc.add(Character.toString(tempS.charAt(i)));
