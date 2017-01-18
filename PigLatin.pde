@@ -4,7 +4,6 @@ ArrayList<String> linesPunc = new ArrayList<String>();
 
 public void setup() {
 	String[] allLines = loadStrings("hamlet.txt");
-
 	for (String s:allLines){
 		splitString(s);
 		if(linesPunc.size()>0)
@@ -12,10 +11,9 @@ public void setup() {
 	}
 	for (int i = 0 ; i < linesWords.size(); i++) 
 	  System.out.print(pigLatin(linesWords.get(i))+linesPunc.get(i));
-	println("");
+	println();
+	exit();
 }
-
-public void draw(){}
 
 public int findFirstVowel(String sWord){
 	for(int i = 0; i<sWord.length(); i++)
